@@ -55,12 +55,12 @@
 }
 
 .item-input,
-.button{
+.item-button{
   border: none;
   outline: none;
 }
 
-.button {
+.item-button {
   background: none;
   order: 0px;
   color: #888;
@@ -70,7 +70,7 @@
   cursor: pointer;
 }
 
-.button:hover {
+.item-button:hover {
   color: #3a3a3a;
 }
 
