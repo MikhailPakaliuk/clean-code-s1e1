@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.header .header-image {
+.header .header__image {
   width: 100%;
 }
 
-.header .header-link {
+.header .header__link {
   font-family: fantasy, cursive;
 }
 
@@ -54,13 +54,13 @@
   list-style: none;
 }
 
-.item-input,
-.item-button{
+.list-item__input,
+.list-item__button{
   border: none;
   outline: none;
 }
 
-.item-button {
+.list-item__button {
   background: none;
   order: 0px;
   color: #888;
@@ -70,13 +70,13 @@
   cursor: pointer;
 }
 
-.item-button:hover {
+.list-item__button:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
 .title,
-.item-label[for="new-task"] {
+.list-item__label[for="new-task"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -86,7 +86,7 @@
   text-transform: uppercase;
 }
 
-.item-input[type="text"] {
+.list-item__input[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -99,17 +99,17 @@
   color: #888;
 }
 
-.item-input[type="text"]:focus {
+.list-item__input[type="text"]:focus {
   color: #333;
 }
 
 /* New Task */
-.item-label[for="new-task"] {
+.list-item__label[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
 
-.item-input#new-task {
+.list-item__input#new-task {
   width: 318px;
 }
 
@@ -128,47 +128,47 @@
   vertical-align: middle;
 }
 
-.list-item > .item-input[type="checkbox"] {
+.list-item > .list-item__input[type="checkbox"] {
   margin: 0 10px;
 }
 
-.list-item > .item-label {
+.list-item > .list-item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-item >    .item-input[type="text"] {
+.list-item >    .list-item__input[type="text"] {
   width: 226px;
 }
 
-.delete .button-image {
+.list-item__button_delete .list-item__button-image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete .button-image:hover {
+.list-item__button_delete .list-item__button-image:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.list#completed-tasks .item-label {
+.list_tasks_completed .list-item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list .list-item .item-input[type="text"] {
+.list .list-item .list-item__input[type="text"] {
   display: none;
 }
 
-.list .edit-mode .item-input[type="text"] {
+.list .list-item_edit-mode .list-item__input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-.list .edit-mode .item-label {
+.list .list-item_edit-mode .list-item__label {
   display: none;
 }
