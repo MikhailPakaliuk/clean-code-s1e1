@@ -5,30 +5,30 @@
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa .image {
+.header .header-image {
   width: 100%;
 }
 
-.aaa .more_inf {
+.header .header-link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .aaa {
+  .header {
     text-align: center;
   }
 
 }
 
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -40,7 +40,7 @@
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.item-new {
   display: flex;
 }
 
@@ -55,11 +55,12 @@
 }
 
 .item-input,
-.button{
+.item-button{
   border: none;
+  outline: none;
 }
 
-.button {
+.item-button {
   background: none;
   order: 0px;
   color: #888;
@@ -69,7 +70,7 @@
   cursor: pointer;
 }
 
-.button:hover {
+.item-button:hover {
   color: #3a3a3a;
 }
 
